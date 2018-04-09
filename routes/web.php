@@ -65,6 +65,15 @@ Route::get('quicklinks', function() {
     return view('quicklinks');
 })->name('quickLinks');
 
-Auth::routes();
+Route::group(['middleware' => 'addrrestrict'], function () {
+    Auth::routes();
+});
 
-Route::get('/!mgt', 'MgtController@index')->name('mgt');
+Route::group(['prefix' => '!mgt', 'middleware' => ['auth','addrrestrict']], function () {
+    Route::get('/', function() {
+        return view('mgt');
+    })->name('mgt');
+    Route::get('managecontent', function () {
+        return view('mgt/managecontent');
+    })->name('manageContent');
+});

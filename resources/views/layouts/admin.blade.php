@@ -12,7 +12,7 @@
                             <nav class="topnav">
                                 <ul class="nav navbar">
                                     <li class="nav-item">
-                                        <a class="nav-link" href={{ route('home')}}>Manage Content</a>
+                                        <a class="nav-link" href={{ route('manageContent')}}>Manage Content</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href={{ route('resources')}}>MainPage Carousel</a>
