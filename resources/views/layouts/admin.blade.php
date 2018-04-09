@@ -12,28 +12,28 @@
                             <nav class="topnav">
                                 <ul class="nav navbar">
                                     <li class="nav-item">
-                                        <a class="nav-link" href={{ route('manageContent')}}>Manage Content</a>
+                                        <a class="nav-link" href={{ route('mgt/manageContent')}}>Manage Content</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href={{ route('resources')}}>MainPage Carousel</a>
+                                        <a class="nav-link" href={{ route('mgt/carousel')}}>MainPage Carousel</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href={{ route('quickLinks')}}>Audit Reports</a>
+                                        <a class="nav-link" href={{ route('mgt/auditReports')}}>Audit Reports</a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a class="nav-link" href={{ route('meetings')}}>Meetings Calendar</a>
+                                        <a class="nav-link" href={{ route('mgt/meetingsCalendar')}}>Meetings Calendar</a>
                                         <div class="dropdown-menu">
-                                            <a href={{ route('upcomingMeetings')}}>Meeting Types</a>
+                                            <a href={{ route('mgt/meetingTypes')}}>Meeting Types</a>
                                         </div>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href={{ route('resources')}}>Agencies</a>
+                                        <a class="nav-link" href={{ route('mgt/agencies')}}>Agencies</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href={{ route('quickLinks')}}>Employment Form</a>
+                                        <a class="nav-link" href={{ route('mgt/employmentForm')}}>Employment Form</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href={{ route('resources')}}>Add Announcement</a>
+                                        <a class="nav-link" href={{ route('mgt/addAnnouncement')}}>Add Announcement</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>

@@ -75,5 +75,26 @@ Route::group(['prefix' => '!mgt', 'middleware' => ['auth','addrrestrict']], func
     })->name('mgt');
     Route::get('managecontent', function () {
         return view('mgt/managecontent');
-    })->name('manageContent');
+    })->name('mgt/manageContent');
+    Route::get('carousel', function () {
+        return view('mgt/carousel');
+    })->name('mgt/carousel');
+    Route::get('auditreports', function () {
+        return view('mgt/auditreports');
+    })->name('mgt/auditReports');
+    Route::get('meetingtypes', function () {
+        return view('mgt/meetingtypes');
+    })->name('mgt/meetingTypes');
+    Route::get('meetingscalendar', function () {
+        return view('mgt/meetingscalendar');
+    })->name('mgt/meetingsCalendar');
+    Route::get('agencies', function () {
+        return view('mgt/agencies');
+    })->name('mgt/agencies');
+    Route::get('employmentform', function () {
+        return view('mgt/employmentform');
+    })->name('mgt/employmentForm');
+    Route::get('addannouncement', function () {
+        return view('mgt/addannouncement');
+    })->name('mgt/addAnnouncement');
 });

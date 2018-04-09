@@ -15,3 +15,6 @@ Uses Laravel, PHP, Javascript, and MySQL. The server is Apache. Unlike
 the current setup, a compiler is unnecessary. LAMP will make the site
 more responsive to changing technologies through a better development
 community and more readable code.
+
+Setup
+APP_ALLOWED_IP
