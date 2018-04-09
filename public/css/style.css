@@ -10,6 +10,14 @@ header {
     padding: 0;
     background: transparent url("/images/background1.png") top center repeat-x;
 }
+header#mgt{
+    height: 65px;
+    padding: 0;
+    background: transparent url("/images/background1invert.png") top center repeat-x;
+}
+header#mgt .container{
+    width: 100%;
+}
 .topnavcontainer .navbar-brand {
 	position: absolute;
 	display: block;
@@ -23,6 +31,12 @@ header {
 }
 nav.topnav {
 	float: right;
+    margin: 4px 100px 0 0;
+	position: relative;
+	z-index: 30;
+}
+header#mgt nav.topnav {
+	float: left;
     margin: 4px 100px 0 0;
 	position: relative;
 	z-index: 30;
@@ -59,7 +73,12 @@ nav.topnav .navbar .nav-item .dropdown-menu a {
 	line-height: 20px;
 	margin-bottom: 0px;
 	font-weight: bold;
-	color: #afafaf;
+	color: #afafaf;.mainpageContent {
+	padding: 20px 0px;
+	background: transparent url("/images/background2.jpeg") top center repeat;
+    margin-bottom: 0;
+	font-family: 'Ropa Sans', sans-serif;
+}
 	font-family: 'Ropa Sans', sans-serif;
 	font-size: 18px;
 	padding: 5px 0px 5px 30px;
@@ -158,6 +177,16 @@ nav.topnav .navbar .nav-item .dropdown-menu a {
 	background: transparent url("/images/background2.jpeg") top center repeat;
     margin-bottom: 0;
 	font-family: 'Ropa Sans', sans-serif;
+}
+.mainpageContent.mgt {
+	padding: 0px 0px;
+	background: transparent url("/images/background2invert.jpeg") top center repeat;
+    margin-bottom: 0;
+	font-family: 'Ropa Sans', sans-serif;
+}
+.mgt .container {
+    background: white;
+    width: 90%;
 }
 footer {
 	background: transparent url("/images/background0.jpg") top center repeat-x;

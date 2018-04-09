@@ -64,3 +64,7 @@ Route::get('resources', function() {
 Route::get('quicklinks', function() {
     return view('quicklinks');
 })->name('quickLinks');
+
+Auth::routes();
+
+Route::get('/!mgt', 'MgtController@index')->name('mgt');

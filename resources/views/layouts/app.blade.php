@@ -69,17 +69,19 @@
             </header>
           @show
           @yield('slider')
-          <div class="searchcontainer">
-                <div class="container">
-                    <div id="Panel1" class="search" onkeypress="">
-                        <div>
-                            <span class="searchspan"><img src={{ asset('images/search_audit_reports.png')}} alt="Search Audit Reports" width="284" height="36"></span>
-						    <input name="tbKeywordsMobile" id="tbKeywordsMobile" class="tbsearchbar" placeholder="Search by auditee, audit ID, audit year, or keyword" type="text">
-						    <input name="bSearchMobile" value="Search" id="bSearchMobile" type="submit">
+          @section('search')
+              <div class="searchcontainer">
+                    <div class="container">
+                        <div id="Panel1" class="search" onkeypress="">
+                            <div>
+                                <span class="searchspan"><img src={{ asset('images/search_audit_reports.png')}} alt="Search Audit Reports" width="284" height="36"></span>
+    						    <input name="tbKeywordsMobile" id="tbKeywordsMobile" class="tbsearchbar" placeholder="Search by auditee, audit ID, audit year, or keyword" type="text">
+    						    <input name="bSearchMobile" value="Search" id="bSearchMobile" type="submit">
+                            </div>
                         </div>
                     </div>
-                </div>
-          </div>
+              </div>
+          @show
           @yield('content')
           @section('footer')
               <footer>
