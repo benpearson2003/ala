@@ -17,4 +17,5 @@ more responsive to changing technologies through a better development
 community and more readable code.
 
 Setup
+git repo @ 10.0.50.86
 APP_ALLOWED_IP
