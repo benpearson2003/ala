@@ -1,4 +1,4 @@
-# L. Borealis
+# LBorealis
 
 Web app for Arkansas Legislative Audit
 
