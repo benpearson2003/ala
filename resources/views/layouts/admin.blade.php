@@ -49,7 +49,11 @@
         @yield('slider')
         @section('search')
         @show
-        @yield('content')
+        <div class="mainpageContent mgt">
+            <div class="container">
+                @yield('content')
+            </div>
+        </div>
         @section('footer')
         @show
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
