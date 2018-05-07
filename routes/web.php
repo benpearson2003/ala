@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -97,4 +97,13 @@ Route::group(['prefix' => '!mgt', 'middleware' => ['auth','addrrestrict']], func
     Route::get('addannouncement', function () {
         return view('mgt/addannouncement');
     })->name('mgt/addAnnouncement');
+
+    Route::get('uploadaudit', function () {
+        return view('mgt/uploadaudit');
+    })->name('mgt/uploadAudit');
+
+    Route::post('uploadaudit', function(Request $request) {
+        $path = $request->file('audit')->store('audits');
+        return view('mgt/uploadaudit');
+    });
 });
