@@ -103,7 +103,20 @@ Route::group(['prefix' => '!mgt', 'middleware' => ['auth','addrrestrict']], func
     })->name('mgt/uploadAudit');
 
     Route::post('uploadaudit', function(Request $request) {
-        $path = $request->file('audit')->store('audits');
+        $validator = Validator::make($request->file(), [
+            'audit' => 'pdf'
+        ]);
+        if($request->hasFile('file'))
+        {
+            $files = $request->file('file');
+            foreach ($files as $file) {
+                $filename = $file->getClientOriginalName();
+                $file->move('storage/audits', $filename);
+            }
+        }
+        /*foreach ($request->files as $file) {
+           $path = $file->store('audits');
+       };*/
         return view('mgt/uploadaudit');
     });
 });

@@ -1,11 +1,17 @@
 @extends('layouts.admin')
 
-@section('title', 'Manage Content')
+@section('title', 'Audit Reports')
 
 @section('search')
 @endsection
 
 @section('content')
+    <style>
+    .header.row {
+        color: #FFF;
+        background: #A52C01;
+    }
+    </style>
     <div class="content">
         <h2 class="pagename">Audit Reports</h2>
         <span id="ctl00_mainContent_msg" style="color: Red;"></span>
