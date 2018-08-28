@@ -7,16 +7,36 @@
 
 @section('content')
     <style>
-    .header.row {
+    th {
         color: #FFF;
         background: #A52C01;
+    }
+    tr, th {
+        padding: 4px;
+    }
+    .button {
+        text-decoration: none;
+        font-weight: normal;
+        display: inline-block;
+        padding: 4px 7px;
+        text-align: center;
+        line-height: 1.4;
+        background: none repeat scroll 0 0 #4CA0BA;
+        border: 1px solid #FFFFFF;
+        border-radius: 5px 5px 5px 5px;
+        box-shadow: 1px 1px 2px #7a7a7a;
+        color: #FFFFFF;
+        font-family: 'Ubuntu',Lucida Sans,Sans-Serif;
+        font-size: 13px;
+        min-width: 56px;
+        margin-bottom: 5px;
     }
     </style>
     <div class="content">
         <h2 class="pagename">Audit Reports</h2>
         <span id="ctl00_mainContent_msg" style="color: Red;"></span>
         <a id="ctl00_mainContent_displayFormView_MultipleButton" class="button" href={{ route('mgt/uploadAudit')}}>Upload Audits</a>
-        <div class="row" id="ctl00_mainContent_pnlSearch">
+        <div class="" id="ctl00_mainContent_pnlSearch">
             <div class="col-md-12">
                 <table style="border:1px solid #000000;" cellspacing="0" cellpadding="2" border="0">
                     <tbody>
@@ -136,17 +156,17 @@
                 </table>
             </div>
         </div>
-        <div class="row">
+        <div class="">
             <div class="col-md-12">
                 <table class="table" id="ctl00_mainContent_displayGridView" style="border-collapse:collapse;" cellspacing="0" border="0">
                     <tbody>
-                        <tr class="header row">
+                        <tr class="header ">
                             <th scope="col">Audit ID</th>
                             <th scope="col">Name</th>
                             <th scope="col">Featured?</th>
                             <th scope="col">&nbsp;</th>
                         </tr>
-                        <tr class="row" id="280467">
+                        <tr class="" id="280467">
                             <td>EDSC01117</td>
                             <td>Arkansas River Educational Service Cooperative</td>
                             <td style="width:5%;">False</td>
@@ -157,7 +177,7 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr class="alt row" id="280465">
+                        <tr class="" id="280465">
                 			<td>IRSD02617</td>
                             <td>Bergman School District Athletic Booster Club</td>
                             <td style="width:5%;">False</td>
@@ -168,7 +188,7 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr class="row" id="280464">
+                        <tr class="" id="280464">
                 			<td>IROA02615</td>
                             <td>West River Valley RSWMD - Green Source Recycling</td>
                             <td style="width:5%;">False</td>
@@ -179,7 +199,7 @@
                                 </div>
                 			</td>
                         </tr>
-                        <tr class="alt row" id="280463">
+                        <tr class="" id="280463">
                 			<td>EDSD22517</td>
                             <td>Paris School District</td>
                             <td style="width:5%;">False</td>
@@ -190,7 +210,7 @@
                                 </div>
                 			</td>
                 		</tr>
-                        <tr class="row" id="280462">
+                        <tr class="" id="280462">
                 			<td>EDSD24517</td>
                             <td>Fouke School District</td>
                             <td style="width:5%;">False</td>
@@ -201,7 +221,7 @@
                                 </div>
                 			</td>
                 		</tr>
-                        <tr class="alt row" id="280461">
+                        <tr class="" id="280461">
                             <td>EDSD23817</td>
                             <td>Flippin School District</td>
                             <td style="width:5%;">False</td>
@@ -212,7 +232,7 @@
                                 </div>
             				</td>
                         </tr>
-                        <tr class="row" id="280460">
+                        <tr class="" id="280460">
                             <td>EDSD23217</td><td>Lonoke School District</td><td style="width:5%;">False</td><td class="text-right-now">
                                 <div class="item">
             					    <a id="ctl00_mainContent_displayGridView_ctl08_LinkButton1" class="button" href="javascript:__doPostBack('ctl00$mainContent$displayGridView$ctl08$LinkButton1','')">Edit</a>
@@ -220,7 +240,7 @@
                                 </div>
             				</td>
                         </tr>
-                        <tr class="alt row" id="280459">
+                        <tr class="" id="280459">
                 			<td>EDSD22817</td>
                             <td>Cabot School District</td>
                             <td style="width:5%;">False</td>
@@ -231,7 +251,7 @@
                                 </div>
             				</td>
                 		</tr>
-                        <tr class="row" id="280458">
+                        <tr class="" id="280458">
                 			<td>EDSD22317</td>
                             <td>Booneville School District</td>
                             <td style="width:5%;">False</td>
@@ -242,7 +262,7 @@
                                 </div>
             				</td>
                 		</tr>
-                        <tr class="alt row" id="280457">
+                        <tr class="" id="280457">
                 			<td>EDSD21717</td>
                             <td>Star City School District</td>
                             <td style="width:5%;">False</td>
@@ -252,7 +272,7 @@
             					    <a onclick="return confirm('Are you sure you want to delete this record?');" id="ctl00_mainContent_displayGridView_ctl11_LinkButton4" class="button" href="javascript:__doPostBack('ctl00$mainContent$displayGridView$ctl11$LinkButton4','')">Delete</a>
                                 </div>
             				</td>
-                		</tr><tr class="row" id="280456">
+                		</tr><tr class="" id="280456">
                 			<td>EDSD20917</td>
                             <td>Sloan Hendrix School District</td>
                             <td style="width:5%;">False</td>
@@ -262,7 +282,7 @@
             					    <a onclick="return confirm('Are you sure you want to delete this record?');" id="ctl00_mainContent_displayGridView_ctl12_LinkButton4" class="button" href="javascript:__doPostBack('ctl00$mainContent$displayGridView$ctl12$LinkButton4','')">Delete</a>
                                 </div>
             				</td>
-                		</tr><tr class="alt row" id="280455">
+                		</tr><tr class="" id="280455">
                 			<td>EDSD20017</td>
                             <td>Westside School District (johnson)</td>
                             <td style="width:5%;">False</td>
@@ -272,7 +292,7 @@
             					    <a onclick="return confirm('Are you sure you want to delete this record?');" id="ctl00_mainContent_displayGridView_ctl13_LinkButton4" class="button" href="javascript:__doPostBack('ctl00$mainContent$displayGridView$ctl13$LinkButton4','')">Delete</a>
                                 </div>
             				</td>
-                		</tr><tr class="row" id="280454">
+                		</tr><tr class="" id="280454">
                 			<td>EDSD19817</td>
                             <td>Lamar School District</td>
                             <td style="width:5%;">False</td>
@@ -282,7 +302,7 @@
             					    <a onclick="return confirm('Are you sure you want to delete this record?');" id="ctl00_mainContent_displayGridView_ctl14_LinkButton4" class="button" href="javascript:__doPostBack('ctl00$mainContent$displayGridView$ctl14$LinkButton4','')">Delete</a>
                                 </div>
             				</td>
-                		</tr><tr class="alt row" id="280453">
+                		</tr><tr class="" id="280453">
                 			<td>EDSD19717</td>
                             <td>Clarksville School District</td>
                             <td style="width:5%;">False</td>
@@ -293,7 +313,7 @@
                                 </div>
             				</td>
                 		</tr>
-                        <tr class="row" id="280452">
+                        <tr class="" id="280452">
                 			<td>LOM109416</td>
                             <td>West Memphis</td>
                             <td style="width:5%;">False</td>
@@ -304,7 +324,7 @@
                                 </div>
             				</td>
                 		</tr>
-                        <tr class="alt row" id="280451">
+                        <tr class="" id="280451">
                 			<td>LOM107216</td>
                             <td>Paragould</td>
                             <td style="width:5%;">False</td>
@@ -315,7 +335,7 @@
                                 </div>
             				</td>
                 		</tr>
-                        <tr class="row" id="280450">
+                        <tr class="" id="280450">
                 			<td>LOM106416</td>
                             <td>Monticello</td>
                             <td style="width:5%;">False</td>
@@ -326,7 +346,7 @@
                                 </div>
             				</td>
                 		</tr>
-                        <tr class="alt row" id="280449">
+                        <tr class="" id="280449">
                 			<td>LOM103916</td>
                             <td>Greenwood</td>
                             <td style="width:5%;">False</td>
@@ -337,7 +357,7 @@
                                 </div>
             				</td>
                 		</tr>
-                        <tr class="row" id="280448">
+                        <tr class="" id="280448">
                 			<td>LOM102716</td>
                             <td>Dewitt</td>
                             <td style="width:5%;">False</td>
@@ -348,7 +368,7 @@
                                 </div>
             				</td>
                 		</tr>
-                        <tr class="alt row" id="280447">
+                        <tr class="" id="280447">
                 			<td>LOM104216</td>
                             <td>Harrison</td>
                             <td style="width:5%;">False</td>
