@@ -40,22 +40,22 @@
                 </td>
 		</tr>
 	</tbody></table>
-    <table class="gridview" id="ctl00_mainContent_gvAuditFiles" style="border-collapse:collapse;" cellspacing="0" border="0">
+    <table class="gridview" id="" style="border-collapse:collapse;" cellspacing="0" border="0">
 		<tbody><tr class="header row">
 			<th scope="col">&nbsp;</th><th scope="col">Audit ID</th><th scope="col" align="left">Auditee/County/Type</th><th scope="col">Dates</th><th scope="col">Meeting(s)</th><th scope="col">Flags</th>
 		</tr><tr class="edit form row">
 			<td>
-                   <input name="ctl00$mainContent$gvAuditFiles$ctl02$ctl00" value="Save" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$mainContent$gvAuditFiles$ctl02$ctl00&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" type="submit">
-                   <input name="ctl00$mainContent$gvAuditFiles$ctl02$ctl01" value="Cancel" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$mainContent$gvAuditFiles$ctl02$ctl01&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" type="submit">
+                   <input name="" value="Save" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$mainContent$gvAuditFiles$ctl02$ctl00&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" type="submit">
+                   <input name="" value="Cancel" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$mainContent$gvAuditFiles$ctl02$ctl01&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" type="submit">
                 </td><td>
                     <a href="/AuditReports//20)./audit(2).pdf" target="_blank">
                     audit(2)</a>
                 </td><td>
                     Name:<br>
-                    <input name="ctl00$mainContent$gvAuditFiles$ctl02$tbName" maxlength="200" size="70" id="ctl00_mainContent_gvAuditFiles_ctl02_tbName" type="text">
+                    <input name="" maxlength="200" size="70" id="" type="text">
                     <br>
                     County:<br>
-                    <select name="ctl00$mainContent$gvAuditFiles$ctl02$ddlCounty" id="ctl00_mainContent_gvAuditFiles_ctl02_ddlCounty">
+                    <select name="" id="">
 				<option selected="selected" value="">-Select a County-</option>
 				<option value="State Wide">State Wide</option>
 				<option value="Arkansas County">Arkansas</option>
@@ -137,7 +137,7 @@
 			</select>
                     <br>
                     Type:<br>
-                    <select name="ctl00$mainContent$gvAuditFiles$ctl02$ddlType" id="ctl00_mainContent_gvAuditFiles_ctl02_ddlType">
+                    <select name="" id="">
 				<option value="">-Select a Type-</option>
 				<option value="CI">Cities</option>
 				<option value="CO">Counties</option>
@@ -158,12 +158,12 @@
 				<option value="WS">Water &amp; Sewer</option>
 
 			</select>
-                    <input name="ctl00$mainContent$gvAuditFiles$ctl02$hdnType" id="ctl00_mainContent_gvAuditFiles_ctl02_hdnType" type="hidden">
+                    <input name="" id="" type="hidden">
 
                 </td><td>
                     Year(s):<br>
-                    <input name="ctl00$mainContent$gvAuditFiles$ctl02$hdnYear" id="ctl00_mainContent_gvAuditFiles_ctl02_hdnYear" value="20)." type="hidden">
-                    <select size="6" name="ctl00$mainContent$gvAuditFiles$ctl02$lbYear" multiple="multiple" id="ctl00_mainContent_gvAuditFiles_ctl02_lbYear">
+                    <input name="" id="" value="20)." type="hidden">
+                    <select size="6" name="" multiple="multiple" id="">
 				<option value="2019">2019</option>
 				<option value="2018">2018</option>
 				<option value="2017">2017</option>
@@ -192,7 +192,7 @@
 
                     <br>
                     Fiscal Date:<br>
-                    <select name="ctl00$mainContent$gvAuditFiles$ctl02$ddlFiscal" id="ctl00_mainContent_gvAuditFiles_ctl02_ddlFiscal">
+                    <select name="" id="">
 				<option selected="selected" value="">None</option>
 				<option value="12/31">December 31</option>
 				<option value="6/30">June 30</option>
@@ -201,30 +201,30 @@
 			</select>
 
                 </td><td>
-                    <input name="ctl00$mainContent$gvAuditFiles$ctl02$hdnTypeMeeting" id="ctl00_mainContent_gvAuditFiles_ctl02_hdnTypeMeeting" value="audit(2)" type="hidden">
-                    <input name="ctl00$mainContent$gvAuditFiles$ctl02$hdnMeetingIDs" id="ctl00_mainContent_gvAuditFiles_ctl02_hdnMeetingIDs" type="hidden">
-                    <select size="6" name="ctl00$mainContent$gvAuditFiles$ctl02$lbMeeting" multiple="multiple" id="ctl00_mainContent_gvAuditFiles_ctl02_lbMeeting">
+                    <input name="" id="" value="audit(2)" type="hidden">
+                    <input name="" id="" type="hidden">
+                    <select size="6" name="" multiple="multiple" id="">
 				<option selected="selected" value="">--NONE--</option>
 
 			</select>
                     <span id="ctl00_mainContent_gvAuditFiles_ctl02_ctl02" class="error" style="color:Transparent;display:none;"><br>Please choose at least one meeting.</span>
 
                 </td><td>
-                    <input id="ctl00_mainContent_gvAuditFiles_ctl02_chkDeferred" name="ctl00$mainContent$gvAuditFiles$ctl02$chkDeferred" type="checkbox"><label for="ctl00_mainContent_gvAuditFiles_ctl02_chkDeferred">Deferred?</label><br>
-                    <input id="ctl00_mainContent_gvAuditFiles_ctl02_chkEarly" name="ctl00$mainContent$gvAuditFiles$ctl02$chkEarly" onclick="javascript:setTimeout('__doPostBack(\'ctl00$mainContent$gvAuditFiles$ctl02$chkEarly\',\'\')', 0)" type="checkbox"><label for="ctl00_mainContent_gvAuditFiles_ctl02_chkEarly">Early?</label><br>
-                    Early Date: <input name="ctl00$mainContent$gvAuditFiles$ctl02$tbEarlyDate" value="1/1/1900" maxlength="10" size="10" id="ctl00_mainContent_gvAuditFiles_ctl02_tbEarlyDate" disabled="disabled" class="txtDate" type="text">
-                    <span id="ctl00_mainContent_gvAuditFiles_ctl02_ctl03" style="color:Red;display:none;">Invalid date</span>
+                    <input id="" name="" type="checkbox"><label for="ctl00_mainContent_gvAuditFiles_ctl02_chkDeferred">Deferred?</label><br>
+                    <input id="" name="" onclick="javascript:setTimeout('__doPostBack(\'ctl00$mainContent$gvAuditFiles$ctl02$chkEarly\',\'\')', 0)" type="checkbox"><label for="ctl00_mainContent_gvAuditFiles_ctl02_chkEarly">Early?</label><br>
+                    Early Date: <input name="" value="1/1/1900" maxlength="10" size="10" id="" disabled="disabled" class="txtDate" type="text">
+                    <span id="" style="color:Red;display:none;">Invalid date</span>
 
-                    <span id="ctl00_mainContent_gvAuditFiles_ctl02_rfvEarlyDate" class="error" style="color:Transparent;display:none;"><br>Early Date is required if Early flag is checked.</span>
+                    <span id="" class="error" style="color:Transparent;display:none;"><br>Early Date is required if Early flag is checked.</span>
                     <br>
-                    Early Time: <input name="ctl00$mainContent$gvAuditFiles$ctl02$tbEarlyTime" value="12:00 AM" maxlength="8" size="8" id="ctl00_mainContent_gvAuditFiles_ctl02_tbEarlyTime" disabled="disabled" class="ui-timepicker-input" autocomplete="off" type="text">
+                    Early Time: <input name="" value="12:00 AM" maxlength="8" size="8" id="" disabled="disabled" class="ui-timepicker-input" autocomplete="off" type="text">
                     <script>
                         $(function () {
-                            $('#ctl00_mainContent_gvAuditFiles_ctl02_tbEarlyTime').timepicker();
+                            $('#').timepicker();
                         });
                     </script>
-                    <span id="ctl00_mainContent_gvAuditFiles_ctl02_ctl05" style="color:Red;display:none;">Invalid time format (HH:MM AM)</span>
-                    <span id="ctl00_mainContent_gvAuditFiles_ctl02_rfvEarlyTime" class="error" style="color:Transparent;display:none;"><br>Early Time is required if Early flag is checked.</span>
+                    <span id="" style="color:Red;display:none;">Invalid time format (HH:MM AM)</span>
+                    <span id="" class="error" style="color:Transparent;display:none;"><br>Early Time is required if Early flag is checked.</span>
                 </td>
 		</tr>
 	</tbody></table>
