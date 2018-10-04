@@ -55,7 +55,7 @@
                     <input name="" maxlength="200" size="70" id="" type="text">
                     <br>
                     County:<br>
-                    <select name="" id="">
+            <select name="" id="">
 				<option selected="selected" value="">-Select a County-</option>
 				<option value="State Wide">State Wide</option>
 				<option value="Arkansas County">Arkansas</option>
@@ -137,7 +137,7 @@
 			</select>
                     <br>
                     Type:<br>
-                    <select name="" id="">
+            <select name="" id="">
 				<option value="">-Select a Type-</option>
 				<option value="CI">Cities</option>
 				<option value="CO">Counties</option>
@@ -163,7 +163,7 @@
                 </td><td>
                     Year(s):<br>
                     <input name="" id="" value="20)." type="hidden">
-                    <select size="6" name="" multiple="multiple" id="">
+            <select size="6" name="" multiple="multiple" id="">
 				<option value="2019">2019</option>
 				<option value="2018">2018</option>
 				<option value="2017">2017</option>
@@ -192,7 +192,7 @@
 
                     <br>
                     Fiscal Date:<br>
-                    <select name="" id="">
+            <select name="" id="">
 				<option selected="selected" value="">None</option>
 				<option value="12/31">December 31</option>
 				<option value="6/30">June 30</option>
@@ -203,7 +203,7 @@
                 </td><td>
                     <input name="" id="" value="audit(2)" type="hidden">
                     <input name="" id="" type="hidden">
-                    <select size="6" name="" multiple="multiple" id="">
+            <select size="6" name="" multiple="multiple" id="">
 				<option selected="selected" value="">--NONE--</option>
 
 			</select>
